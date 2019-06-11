@@ -1,8 +1,4 @@
-@font-face {
-     
-    src: url("resources/barbaro.ttf") format('truetype');
-    font-family: "barbaro";
-}
+
 body{
     font-family: 'Oswald', sans-serif;
 }
