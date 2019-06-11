@@ -1,15 +1,17 @@
 
 body{
-    font-family: 'Oswald', sans-serif;
+    font-family: nunito, sans-serif;
 }
 *{
    margin:0;
     padding:0;
 }
-
+.row{
+    max-width: 1148px;
+    margin: 0 auto;
+}
 header {
-    display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
+    
     height: 100vh;
     background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.7)),url(img/dry-cleaning-hornsby.jpg);
     background-size: cover;
@@ -18,15 +20,46 @@ header {
 }
 header img{
     height: 200px;
-    grid-area: 1/1/2/2;
+    margin:0 0 50px 0;
 }
 header nav{
+    float: right;
     font-size: 130%;
     font-weight: 700;
-    grid-area: 1/2/2/3;
+    
+}
+header nav ul{
+    list-style: none;
+    margin-top: 20px;
+}
+header nav a:link,
+header nav a:visited{
+    text-decoration: none;
+    color: white;
+    font-size: 120%;
+    font-weight: 300;
+    border-bottom: 2px solid white;
+    transition:border-bottom .5s,color .5s;
+}
+header nav a:hover{
+border-bottom: 2px solid black;
+color:white;
+}
+header nav li{
+display: inline;
+margin-right: 20px;
+}
+header nav li:last-child{
+    margin-right: 0;
 }
 header h1{
+    font-family: nunito,serif;
+    margin: 10% 0 0 1%;
     font-weight: 200;
-    grid-area: 2/1/3/3;
-    font-size: 700%;
+    text-transform: uppercase;
+    font-size: 400%;
+    font-weight: 200;
+    line-height: 145%;
+    
+    
 }
