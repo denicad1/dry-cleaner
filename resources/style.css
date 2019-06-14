@@ -5,6 +5,7 @@ body{
 *{
    margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 /*==== reusables =====*/
 .row{
@@ -23,7 +24,7 @@ h2{
 h2:after{
     content: "";
     display: block;
-    width:75%;
+    width:50%;
     height: 2px;
     background-color: black;
     margin: 10px auto;
@@ -46,6 +47,10 @@ header {
 header img{
     height: 200px;
     margin:0 0 50px 0;
+    background-color:rgba(204, 166, 127, 0.74);
+    opacity: .8;
+    box-shadow: 0 0 5px rgba(204, 166, 127, 0.74), 0 5px 8px rgba(204, 166, 127, 0.74);
+    
 }
 header nav{
     float: right;
@@ -92,3 +97,46 @@ header h1{
 
 
 /*=== why we are better section ====*/
+/*==== Our Products section ======*/
+.showcase{
+    list-style: none;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+    text-align: center;
+    margin:0 auto ;
+    
+    
+}
+.showcase li{
+    padding: 0;
+    margin: 0 ;
+    display: inline-block;
+    margin: 0 auto;
+    height:150px;
+    width:25%;
+    overflow: hidden;
+    float: left;
+    
+}
+.showcase a{
+    margin: 0;
+    padding: 0;
+}
+
+
+.showcase img{
+    transform: scale(1.15);
+    padding: 0;
+    margin: 0;
+    height:100%;
+    width:100%;
+    opacity: .6;
+    transition:transform 1s ;
+}
+.showcase img:hover{
+   transform: scale(1);
+    opacity: 1;
+}
