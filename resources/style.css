@@ -33,6 +33,8 @@ h2:after{
 .info{
         text-indent: 20px;
         text-align: justify;
+    line-height: 200%;
+    letter-spacing: 1px;
         
     }
 /*=== the landing site =====*/
