@@ -105,11 +105,14 @@ header h1{
   display: inline-block;
   width: 65%;
   margin: 0 auto;
+    
 }
 
 .intro__img{ 
     float: right;
     margin-bottom: 50px;
+    
+   
 }
 .intro__img img{
     border: 2px solid black;
