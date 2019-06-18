@@ -16,20 +16,28 @@
         text-indent: 20px;
         text-align: justify;
         margin: 0 5%;
+        line-height: 200%;
+        
+        
     }
     
 /*    ====== where we started =====*/
     .intro .info{
-        width: 100%;
-        padding: 0 5%;
+        width: 95%;
+        padding: 0 5% 0 0;
+        margin-top: 0;
+        
+        margin-right: 0;
+        
         
     }
     .intro__img{
        display: block;
-        width: 100vw;
+        width: 90%;
         margin-top: 5%;
-        height: 80vh;
-         
+        height: 300px;
+        margin-right: 5%;
+        
     }
     
     .intro__img img{
