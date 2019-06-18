@@ -105,7 +105,7 @@ header h1{
 }
 
 /*==== where we started section =======*/
-.intro{}
+
 .intro .info{
   display: inline-block;
   width: 100%;
@@ -213,7 +213,7 @@ header h1{
 .showcase li{
     padding: 0;
     margin: 0 ;
-    display: inline-block;
+    
     margin: 0 auto;
     height:150px;
     width:25%;
