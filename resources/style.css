@@ -41,7 +41,7 @@ h2:after{
 header {
     
     height: 100vh;
-    background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.9)),url(img/dry-cleaning-hornsby.jpg);
+    background-image:linear-gradient(rgba(255,255,255,.1),rgba(0,0,0,.8)),url(img/dry-cleaning-hornsby.jpg);
     background-size: cover;
     width: auto;
  
@@ -50,34 +50,28 @@ header {
 header img{
     box-sizing: content-box;
     margin: 0 0 50px 0;
-    background-color:rgba(204, 166, 127, 0.74);
-    opacity: .8;
-    box-shadow: 0 0 5px rgba(204, 166, 127, 0.74), 0 5px 8px rgba(204, 166, 127, 0.74);
+/*    background-color:rgba(204, 166, 127, 0.74);*/
+/*    opacity: 1;*/
+/*    box-shadow: 0 0 5px rgba(204, 166, 127, 0.74), 0 5px 8px rgba(204, 166, 127, 0.74);*/
     border-radius: 25%;
   
     
 }
 header nav{
     float: right;
-    font-size: 130%;
-    font-weight: 700;
+    font-size: 160%;
+    font-weight: 400;
 }
 header nav ul{
     list-style: none;
-    margin-top: 20px;
+    margin-top: 60px;
 }
 header nav a:link,
 header nav a:visited{
     text-decoration: none;
-    color: white;
-    font-size: 120%;
-    font-weight: 300;
-    border-bottom: 2px solid white;
+    color: black; 
+    border-bottom: 2px solid transparent;
     transition:border-bottom .5s,color .5s;
-}
-header nav a:hover{
-border-bottom: 2px solid black;
-color:white;
 }
 header nav li{
 display: inline;
@@ -85,6 +79,13 @@ margin-right: 20px;
 }
 header nav li:last-child{
     margin-right: 0;
+}
+header nav li:first-child a{
+    color:white;
+}
+header nav a:hover{
+border-bottom: 2px solid black;
+color:white;
 }
 header h1{
     font-family: nunito,serif;
@@ -94,7 +95,7 @@ header h1{
     font-size: 400%;
     font-weight: 200;
     line-height: 145%;
-    color: white;
+    color: black;
     
     
 }
