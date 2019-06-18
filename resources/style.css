@@ -87,7 +87,7 @@ header nav li:first-child a{
     color:white;
 }
 header nav a:hover{
-border-bottom: 2px solid black;
+border-bottom: 2px solid white;
 color:white;
 }
 header h1{
@@ -135,6 +135,7 @@ header h1{
 /*===== Our Process Section =======*/
 .process{
     clear: both;
+    
 }
 .process__card{
     width:23%;
@@ -144,27 +145,44 @@ header h1{
     margin:80px 1%;
     height: 500px;  
     overflow: hidden;
-    border-radius: 25px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 5px 6px rgb(0, 9, 16);
+    transition: transform .3s;
+    
+}
+.process__card:hover{
+    transform: scale(1.03);
 }
 .process__img{
     width:100%;
     height: 250px; 
-    box-shadow: 2px 0 5px 5px black;
+    box-shadow: 0px 2px 5px 5px #001628;
 }
 .process__step{
     width: 100%;
     display: block;
-    margin: 20px 0;
+    margin: 10px 0;
+   
     text-align: center;
+    color:#001628;
+    font-weight: 400;
+    text-transform: uppercase;
+    
 }
 .process__step:after{
+    margin-top: 10px;
     content: "";
     display: block;
     width: 100%;
-    height: 3px;
+    height: 2px;
     background-color: black;
     
+    box-shadow: 0 3px 5px 2px #001628;
+    
 }
+
+
 
 /*=== why we are better section ====*/
 /*==== Our Products section ======*/
