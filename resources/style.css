@@ -175,10 +175,6 @@ header h1{
     text-align: center;
     padding: 0 5%;
 }
-
-
-
-/*=== why we are better section ====*/
 /*==== Our Products section ======*/
 .showcase{
     list-style: none;
@@ -222,3 +218,9 @@ header h1{
    transform: scale(1);
     opacity: 1;
 }
+/*=== why we are better section ====*/
+.betterness{
+    background-image:url("img/maxresdefault.jpg"),linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+    background-size: cover;
+}
+
