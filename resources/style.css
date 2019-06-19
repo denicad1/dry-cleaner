@@ -48,15 +48,13 @@ header {
     background-image:linear-gradient(rgba(255,255,255,.1),rgba(0,0,0,.8)),url(img/dry-cleaning-hornsby.jpg);
     background-size: cover;
     width: auto;
+    background-attachment: fixed;
  
 }
 
 header img{
     box-sizing: content-box;
     margin: 0 0 50px 0;
-/*    background-color:rgba(204, 166, 127, 0.74);*/
-/*    opacity: 1;*/
-/*    box-shadow: 0 0 5px rgba(204, 166, 127, 0.74), 0 5px 8px rgba(204, 166, 127, 0.74);*/
     border-radius: 25%;
   
     
@@ -97,45 +95,30 @@ header h1{
     text-transform: uppercase;
     font-size: 400%;
     font-weight: 200;
-    line-height: 145%;
-    
-    
+    line-height: 145%;   
 }
 
 /*==== where we started section =======*/
 
 .intro .info{
-  display: inline-block;
-  width: 100%;
   margin: 5% 0;
-    text-align: center;
-    
-    
 }
 
 .intro__img{ 
     display: inline-block;
     width: 30%;
-    margin:13% 1.5%;
-    
-    
-    
-   
+    margin:13% 1.5%;  
 }
 .intro__img img{
     width:100%;
-    /* border: 2px solid black; */
     border-radius: 25px;
     display: block;
-    height:250px;
-   
+    height:250px; 
     text-align: right;
-    /* box-shadow: 0 0 10px 2px black;  */
 }
 .intro__img sub{
     font-size:10px;
-    margin:30%;
-    
+    margin:30%;  
 }
 /*===== Our Process Section =======*/
 .process{
