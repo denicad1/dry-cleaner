@@ -32,7 +32,7 @@ h2:after{
 
 .info{
         text-indent: 20px;
-        text-align: justify;
+        text-align: center;
     line-height: 300%;
     letter-spacing: 1px; 
     margin-top : 40px;
@@ -63,8 +63,8 @@ header img{
 }
 header nav{
     float: right;
-    font-size: 160%;
-    font-weight: 400;
+    font-size: 130%;
+    font-weight: 300;
 }
 header nav ul{
     list-style: none;
@@ -73,7 +73,7 @@ header nav ul{
 header nav a:link,
 header nav a:visited{
     text-decoration: none;
-    color: black; 
+    color: white; 
     border-bottom: 2px solid transparent;
     transition:border-bottom .5s,color .5s;
 }
@@ -81,15 +81,14 @@ header nav li{
 display: inline;
 margin-right: 20px;
 }
+header nav li:first-child{
+    border-bottom: 2px solid white;
+}
 header nav li:last-child{
     margin-right: 0;
 }
-header nav li:first-child a{
-    color:white;
-}
 header nav a:hover{
 border-bottom: 2px solid white;
-color:white;
 }
 header h1{
     font-family: nunito,serif;
@@ -99,7 +98,6 @@ header h1{
     font-size: 400%;
     font-weight: 200;
     line-height: 145%;
-    color: black;
     
     
 }
@@ -109,7 +107,8 @@ header h1{
 .intro .info{
   display: inline-block;
   width: 100%;
-  margin-top: 5%;
+  margin: 5% 0;
+    text-align: center;
     
     
 }
@@ -117,7 +116,7 @@ header h1{
 .intro__img{ 
     display: inline-block;
     width: 30%;
-    margin:50px 1.5%;
+    margin:13% 1.5%;
     
     
     
