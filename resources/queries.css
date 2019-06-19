@@ -23,20 +23,15 @@
     
 /*    ====== where we started =====*/
     .intro .info{
-        width: 95%;
-        padding: 0 5% 0 0;
-        margin-top: 0;
-        
-        margin-right: 0;
-        
-        
+        text-align: justify; 
+        margin: 0 5%;
     }
     .intro__img{
        display: block;
         width: 90%;
         margin-top: 5%;
         height: 300px;
-        margin-right: 5%;
+        margin-left: 5%;
         
     }
     
@@ -52,4 +47,13 @@
     .intro__img sub{
         display: none;
     }
+/*    ===== Our Process section =====*/
+    
+    .process__card{
+        width:80%; 
+    }
+    
+    
+    
+    
 }
