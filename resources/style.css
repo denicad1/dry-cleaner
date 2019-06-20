@@ -227,4 +227,44 @@ header h1{
     background-size: cover;
     background-attachment: fixed;
 }
-
+.betterness h2:after{
+    content: "";
+    display: block;
+    width:50%;
+    height: 2px;
+    background-color: white;
+    margin: 20px auto;
+}
+.reason{
+    display: inline-block;
+    width: 49%;
+    height:300px;
+    vertical-align: top; 
+    margin-top: 5%;
+}
+.reason i{
+    font-size: 80px;
+    width: 100%;
+    text-align: center; 
+    
+}
+.reason h3{
+    
+    text-align: center;
+    margin : 3% 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.reason h3:after{
+    content: "";
+    display: block;
+    width:50%;
+    height: 3px;
+    background-color: white;
+    margin: 0 auto;
+}
+.reason__info{
+    width: 50%;
+    margin:auto auto;
+}
