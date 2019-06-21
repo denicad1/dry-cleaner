@@ -12,11 +12,14 @@ body{
     max-width: 1100px;
     margin: 0 auto;
 }
+.section{
+    padding:20px 0;
+}
 h2{
     word-spacing: 5px;
     letter-spacing: 2px;
     text-transform: capitalize;
-    margin: 30px 0;
+    padding:30px 0;
     text-align: center;
     font-weight: 300;
     font-size: 200%;
@@ -123,26 +126,28 @@ header h1{
 /*===== Our Process Section =======*/
 .process{
     clear: both;
-   
+   background-color: rgb(227, 227, 227);
+    overflow: hidden;
     
+}
+.process p{
+    margin-top: 0;
 }
 .process__cards{
     margin-top: 100px;
     margin-bottom: 40px;
+    overflow: hidden;
 }
 .process__card{
     width:30%;
     display:block;
-    float: left;
-    
+    float: left;  
     margin:20px 10%;
     height: 500px;  
     overflow: hidden;
     border-radius: 50px;
-    background-color: #FFFFFF;
-   
-    transition: transform .3s;
-    
+    background-color: rgb(227, 227, 227);
+    transition: transform .3s; 
 }
 .process__card:hover{
     transform: scale(1.03);
@@ -174,58 +179,58 @@ header h1{
 .process__detail{
     text-align: center;
     padding: 0 5%;
+    line-height: 2;
 }
 /*==== Our Products section ======*/
-.showcase{
-    list-style: none;
-    background-color: black;
-    margin: 0;
-    padding: 0;
+.showcase-section{
+    background-color: rgb(227, 227, 227);
     overflow: hidden;
-    
+}
+.showcase{
+    overflow:hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0 5%;
     text-align: center;
     margin:0 auto ;
-    
-    
 }
 .showcase li{
-    padding: 0;
-    margin: 0 ;
-    
+    height: 300px;
     margin: 0 auto;
-    height:150px;
-    width:25%;
     overflow: hidden;
-    float: left;
+    width:25%;
     
+    float: left;
 }
 .showcase a{
     margin: 0;
     padding: 0;
+    
 }
 
 
 .showcase img{
-    transform: scale(1.15);
     padding: 0;
     margin: 0;
     height:100%;
     width:100%;
-    opacity: .6;
-    transition:transform 1s ;
+    transition:opacity 1s ;
 }
+
 .showcase img:hover{
-   transform: scale(1);
-    opacity: 1;
+    opacity: .7;
 }
 /*=== why we are better section ====*/
 .betterness{
     color: white;
-    margin:100px 0;
-    padding: 100px 0;
+    margin:0;
+   
     background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("img/maxresdefault.jpg") ;
     background-size: cover;
     background-attachment: fixed;
+}
+.betterness .info:last-child{
+    margin-bottom: 5%;
 }
 .betterness h2:after{
     content: "";
@@ -240,7 +245,8 @@ header h1{
     width: 49%;
     height:300px;
     vertical-align: top; 
-    margin-top: 5%;
+    margin: 5% 0;
+    
 }
 .reason i{
     font-size: 80px;
@@ -249,7 +255,7 @@ header h1{
     
 }
 .reason h3{
-    
+    line-height: 2;
     text-align: center;
     margin : 3% 0;
     font-weight: 300;
@@ -266,5 +272,7 @@ header h1{
 }
 .reason__info{
     width: 50%;
-    margin:auto auto;
+    margin:0 auto;
+    line-height: 2;
+   
 }
