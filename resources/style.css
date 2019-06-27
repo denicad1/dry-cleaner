@@ -1,11 +1,15 @@
-
+html{
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
 body{
     font-family: nunito, sans-serif;
 }
 *{
    margin:0;
     padding:0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 /*==== reusables =====*/
 .row{
@@ -48,15 +52,18 @@ h2:after{
 header {
     
     height: 100vh;
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(255,255,255,.1)),to(rgba(0,0,0,.8))),url(img/dry-cleaning-hornsby.jpg);
     background-image:linear-gradient(rgba(255,255,255,.1),rgba(0,0,0,.8)),url(img/dry-cleaning-hornsby.jpg);
     background-size: cover;
     width: auto;
     background-attachment: fixed;
+
  
 }
 
 header img{
-    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
     margin: 0 0 50px 0;
     border-radius: 25%;
   
@@ -66,31 +73,75 @@ header nav{
     float: right;
     font-size: 130%;
     font-weight: 300;
+    width:60%; 
+/*
+
+*/
+
 }
 header nav ul{
+    
     list-style: none;
-    margin-top: 70px;
+    margin: 70px auto;
+    padding:10px 20px;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+   
+    
 }
 header nav a:link,
 header nav a:visited{
+    
+    display: block;
     text-decoration: none;
-    color: white; 
-    border-bottom: 2px solid transparent;
-    transition:border-bottom .5s,color .5s;
+    color: white;
+    text-align: center;
+    padding:1px 5px;  
 }
 header nav li{
-display: inline;
-margin-right: 20px;
+    position: relative;
+display: inline-block;
+margin-right:20px;
+    z-index: 7;
+    transform-style: preserve-3d;
+   
+
 }
-header nav li:first-child{
-    border-bottom: 2px solid white;
+header nav li a:after{
+    position: absolute;
+    content: attr(data-title);
+    display: block;
+    background-color: blue;
+    color: transparent;
+    -webkit-transform:  rotateX(-120deg);
+            transform:  rotateX(-120deg) translate3d(0,150%,0);
+    -webkit-transition: all 1000ms ease;
+    transition: all 1000ms ease; 
+    -webkit-transform-style: preserve-3d; 
+            transform-style: preserve-3d;
+    z-index: -1;
+    top: 0;
+    left: 2px;
+    padding: 3px;
+    border-radius: 5px;
+/*    need to fix issue with border appearing. it seems preserve 3d isn't working. don't know why. also need to figure out issue with z-index. */
+   
+    
+    
+    
 }
-header nav li:last-child{
-    margin-right: 0;
+
+header nav li a:hover:after{
+    -webkit-transform: rotateX(0deg) translateZ(0px);
+            transform: rotateX(0deg) translateZ(0px);    
 }
+
+/*
 header nav a:hover{
 border-bottom: 2px solid white;
 }
+*/
 header h1{
     font-family: nunito,serif;
     margin: 20% 0 0 0;
@@ -150,10 +201,14 @@ header h1{
      
 }
 .process__img:hover{
-    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
 }
 .process__img{
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
     transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
     width:90%;
     height: 250px; 
    border-radius: 50%;
@@ -218,6 +273,7 @@ header h1{
     margin: 0;
     height:100%;
     width:100%;
+    -webkit-transition:opacity 1s ;
     transition:opacity 1s ;
 }
 
@@ -228,6 +284,8 @@ header h1{
 .betterness{
     color: white;
     margin:0;
+   
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.6)),to(rgba(0,0,0,0.6))),url("img/maxresdefault.jpg") ;
    
     background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("img/maxresdefault.jpg") ;
     background-size: cover;
